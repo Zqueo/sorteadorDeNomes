@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sorteador de nomes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteador de Nomes</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- Main Title -->
-<h1>Sorteador de nomes</h1>
+  <!-- Main Title -->
+  <h1>Sorteador de Nomes</h1>
 
-<!-- Textarea for users to input names -->
-<textarea id="input"></textarea>
+  <!-- Textarea for users to input names -->
+  <textarea id="input" placeholder="Digite os nomes aqui, separados por vírgulas..." aria-label="Caixa de texto para inserir nomes"></textarea>
 
-<!-- Submit button -->
-<button type="submit" id="submitBtn">Sortear</button>
+  <!-- Submit button -->
+  <button type="submit" id="submitBtn" aria-label="Botão para sortear um nome">Sortear</button>
 
-<!-- Winner annoucement -->
-<h2>O Vencedor é...</h2>
+  <!-- Winner announcement -->
+  <h2>O Vencedor é...</h2>
 
-<!-- Empty div filled by JS with winner's name -->
-<div id="winner"></div>
+  <!-- Empty div filled by JS with winner's name -->
+  <div id="winner" aria-live="polite"></div>
 
-<!-- Link to Jquery library and this page's script tags -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+  <!-- Link to jQuery library and this page's script tags -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
